@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Dancing Tuition
+    block scripts
+        script(src="../static/js/index.js") 
+    block style
+        style 
+            include ../static/css/style.css
+  body
+
+    nav#navBar 
+        img(src="../static/img/logo3.png", alt="", srcset="")
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+        
+        div.searchBox
+            input(type="text" placeholder="Search items...")
+            button Search
+
+    block content
+
+    footer#footer 
+        p QaviDanceAcademy.com copyright &copy;2021 | All Rights Reserved
